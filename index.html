@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Etiquetas para el SEO -->
+    <meta name="author" content="Ivonne Cantor">
+    <meta name="descrription" content="Recopilatorio de etiquetas HTML">
+    <meta name="keywords" content="HTML, imágenes, desarrollo web, diseño web">
     <title>Catálogo de etiquetas HTML</title>
+    <link rel="shortcut icon" href="img/002.ico" type="image/x-icon">
+
+    <style>
+      p{
+        color: blue;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+    </style>
+
+
   </head>
+
   <body>
     <!-- <nombre_etiqueta> no llevan contenido, ejemplo las metas -->
     <!-- Hay dos clases de atributos que llevan valor o booleano -->
@@ -12,7 +28,8 @@
 
     <!-- 1.1 Titulos o titulares  -->
     <!-- Etiquetas para poner Títulos, llega hasta la 6 y son jerarquicas -->
-    <h1 id="titulo1">Soy un título h1</h1>
+    <h1 id="titulo1" style="color: red">Soy un título h1</h1>
+
     <h2>Soy un h2</h2>
     <h3>Soy un h3</h3>
     <h4>Soy un h4</h4>
@@ -32,6 +49,8 @@
     <!-- Para poner una cita -->
     <p>Una frase famosa de <cite>Galileo </cite>fue:</p>
     <blockquote>... Sin embargo se mueve</blockquote>
+
+    <p>Ejemplo de cita corta: <cite>Sócrates</cite> dijo <q>Conócete a ti mismo</q></p>
 
     <!-- 2 - Listas -->
     <!-- 2.1. Listas desordenadas -->
@@ -113,6 +132,13 @@
             img/1920.jpg 1920w,
             img/2400.jpg 2400w"> -->
 
+    <picture>
+      <source srcset="img/1200.jpg" media="(min-width:650px)">
+      <source srcset="img/1920.jpg" media="(min-width: 800px)">
+      <source src="img/2400.jpg" media="min-width:650px">
+      <img src="img/640.jpg" alt="">
+    </picture>
+
     <!-- 5 - Enlaces -->
     <a href="https://google.es" target="_blank">Google</a>
 
@@ -120,6 +146,28 @@
 
     <a href="https://undraw.co/search" target="_blank"><img src="img/undraw_barista_qd50.svg" alt="" width="100">
     </a>
+    <div>Hola</div>
+    <span>Hola</span>
+    <span>Hola</span>
+
+    <header></header>
+    <nav></nav>
+    <main>
+      <section>
+        <ARTicle>
+
+        </ARTicle>
+      </section>
+      <section>
+        
+      </section>
+      <section>
+        
+      </section>
+    </main>
+    <ASide></ASide>
+    <footer></footer>
+
 
   </body>
 </html>
