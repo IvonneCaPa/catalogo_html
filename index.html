@@ -179,6 +179,32 @@
       <img src="img/640.jpg" alt="">
     </picture>
 
+    <!-- Nueva Etiqueta 
+      hace un emergente
+    -->
+    <details>
+      <summary>Que dia es hoy</summary>
+      <p>Hoy es jueves</p>
+    </details>
+
+    <details open>
+      <summary>Que dia es hoy</summary>
+      <p>Hoy es 😻</p>
+    </details>
+
+    <!-- pupop -->
+    <dialog id="modal">
+      <h2>Esto es un ejemplo de ventana modal</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, impedit possimus! Sed tempore ex odio consequatur hic est labore harum.</p>
+      <button id="cerrar">Cerrar Ventana</button>
+    </dialog>
+    <button id="abrir">abrir</button>
+    <script>
+      window.abrir.addEventListener('click',()=>{window.modal.showModal()})
+      window.cerrar.addEventListener('click',()=>{window.modal.close()})
+    </script>
+
+
     <!-- 5 - Enlaces -->
     <a href="https://google.es" target="_blank">Google</a>
 
