@@ -8,20 +8,50 @@
     <meta name="descrription" content="Recopilatorio de etiquetas HTML">
     <meta name="keywords" content="HTML, imágenes, desarrollo web, diseño web">
     <title>Catálogo de etiquetas HTML</title>
-    <link rel="shortcut icon" href="img/002.ico" type="image/x-icon">
-
-    <style>
-      p{
-        color: blue;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-    </style>
-
-
+    <link rel="shortcut icon" href="img/favicon_mundo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-
   <body>
+    <header>
+      <picture>
+        <source srcset="img/header_500.avif" media="(max-width:500px)">
+        <source srcset="img/header_1100.avif" media="(max-width:1100px)">
+        <img src="img/header_1920.avif" alt="Ordenador para programar">
+      </picture>
+      <h1>Etiquetas HTML</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="imagenes.html">Imagenes</a></li>
+          <li><a href="listas.html">Listas</a></li>
+          <li><a href="multimedia.html">Multimedia</a></li>
+          <li><a href="semantica.html">Semantica</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Introducción a HTML</h2>
+        <p>La sintaxis básica de HTML es:</p>
+        <pre>
+          &lt;nombre_etiqueta&gt;contenido&lt;/nombre_etiqueta&gt;
+          &lt;nombre_etiqueta&gt no llevan contenido, ejemplo las metas
+          &lt;nombre_etiqueta nombre_atributo="valor"&gt;contenido&lt;/nombre_etiqueta&gt;
+        </pre>
+        
+
+
+
+
+    </main>
+    <footer>
+      <p id="copyrigth">&copy; Ivonne</p>
+      <p>Curso <span>2024</span></p>
+    </footer>
+
+    <!-- Para que la imag en se corresponda con el dispositivo -->
+
+
     <!-- <nombre_etiqueta> no llevan contenido, ejemplo las metas -->
     <!-- Hay dos clases de atributos que llevan valor o booleano -->
     <!-- <nombre_etiqueta nombre_atributo="valor" atributo_booleano>contenido</nombre_etiqueta> -->
@@ -71,6 +101,16 @@
         <li>India</li>
         <li>Estados Unidos</li>
     </ol>
+
+    <!-- 2.3 listas descrptivas -->
+    <!-- empieza con dl, luego se le asignan valores dt y dd -->
+    <dl>
+      <dt>HTM</dt>
+      <dd>Es el lenguaje de las páginas web</dd>
+      <dt>CSS</dt>
+      <dd>Sirve para dar estilos</dd>
+    </dl>
+
 
     <!-- 3- tablas -->
     <h2>ejemplo de factura</h2>
